@@ -74,6 +74,12 @@ docker run \
     -d --privileged \
     fcojean/l2tp-ipsec-vpn-server
 ```
+### Fix bug on centos
+```
+echo 'af_key' > /etc/modules-load.d/af_key.conf 
+reboot 
+
+``` 
 
 ### Retrieve VPN login details
 
